@@ -54,7 +54,7 @@ p {
         position: relative;
 
         h1 {
-            padding-top: 17vw;
+            padding-top: 20vw;
         }
 
         p {
@@ -210,10 +210,10 @@ p {
         }
 
         &__os {
-            width  : 145px;
+            width  : 148px;
             height : 85px;
             display: inline-block;
-            padding: 30px 2vw;
+            padding: 30px 1vw;
 
             img {
                 width         : 18%;
@@ -224,8 +224,7 @@ p {
                 display         : block;
                 font-weight     : 700;
                 height          : 35px;
-                width           : 145px;
-                background-color: $color-white;
+                width           : 148px;
                 border-radius   : 5px;
                 border          : 0;
                 background-color: $color-purple;
