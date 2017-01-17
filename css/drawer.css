@@ -368,9 +368,8 @@
 
 @media (min-width: 64em) {
     .drawer-navbar {
-        height: 3.75rem;
-        border-bottom: 1px solid #ddd;
-        background-color: #9f3eed;
+        height: 6rem;
+        background-color: rgba(159, 62, 237, 0.5);
     }
     .drawer-navbar .drawer-navbar-header {
         position: relative;
@@ -379,6 +378,8 @@
         width: auto;
         padding: 0;
         border: 0;
+        height: 6rem;
+        background: transparent;
     }
     .drawer-navbar .drawer-menu--right {
         float: right;
@@ -387,7 +388,7 @@
         float: left;
     }
     .drawer-navbar .drawer-menu-item {
-        line-height: 3.75rem;
+        line-height: 6rem;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -399,10 +400,11 @@
         left: 0;
         overflow: visible;
         width: auto;
-        height: 3.75rem;
+        height: 6rem;
         padding-top: 0;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+        background: transparent;
     }
     .drawer-navbar .drawer-menu {
         padding: 0;
@@ -415,6 +417,9 @@
     }
     .drawer-navbar .drawer-dropdown-menu-item {
         padding-left: .75rem;
+    }
+    .drawer-navbar .drawer-brand {
+        line-height: 6rem;
     }
 }
 

@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" />
         <link href="./css/style.css" rel="stylesheet" />
+        <link href="./css/style-desktop.css" rel="stylesheet" />
         <link href="./css/drawer.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
@@ -32,10 +33,10 @@
                 <nav class="drawer-nav" role="navigation">
                     <ul class="drawer-menu drawer-menu--right">
                         <li><a class="drawer-menu-item scrollTo" href="#works">How It Works</a></li>
-                        <li><a class="drawer-menu-item scrollTo" href="#buckasur">What is Buckasur</a></li>
-                        <li><a class="drawer-menu-item scrollTo" href="#newsletter">Newsletter</a></li>
+                        <li><a class="drawer-menu-item scrollTo" href="#buckasur">About Buckasur</a></li>
+                        <li class="drawer-menu-item--hidden"><a class="drawer-menu-item scrollTo" href="#newsletter">Newsletter</a></li>
                         <li><a class="drawer-menu-item scrollTo" href="#download">Download</a></li>
-                        <li><a class="drawer-menu-item scrollTo" href="#contact">Contact</a></li>
+                        <li class="drawer-menu-item--hidden"><a class="drawer-menu-item scrollTo" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,43 +44,84 @@
         <main role="main">
             <section class="home" id="home">
                 <div class="home__content">
-                    <h1>Get Best Offer On</h1>
-                    <p>Online Shopping When Buckasur is with You!</p>
-                    <button><img src="./img/mobile/download.png" alt="">Free Download</button>
-                    <img src="./img/mobile/mobile1.png" alt="">
+                    <div class="home__content__text">
+                        <h1>Get Best Offer On</h1>
+                        <p>Online Shopping When Buckasur is with You!</p>
+                        <button><img src="./img/mobile/download.png" alt="">Free Download</button>
+                    </div>
+                    <img class="img__mobile-shown" src="./img/mobile/mobile1.png" alt="">
+                    <img class="img__desktop-shown" src="./img/phone1.png" alt="">
                 </div>
             </section>
             <section class="works" id="works">
                 <div class="works__content">
-                    <h2>How It Works</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                    <img class="works__content_img" src="./img/mobile/search.png" alt="">
-                    <h3>Search Your Product</h3>
-                    <img class="works__content_line" src="./img/mobile/mobile-line.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <img class="works__content_img" src="./img/mobile/track.png" alt="">
-                    <h3>Track Price</h3>
-                    <img class="works__content_line" src="./img/mobile/mobile-line.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <img class="works__content_img" src="./img/mobile/notification.png" alt="">
-                    <h3>Get Notifications</h3>
-                    <img class="works__content_line" src="./img/mobile/mobile-line.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="works__content__text">
+                        <h2>How It Works</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="works__content__points">
+                        <img class="points_img" src="./img/mobile/search.png" alt="">
+                        <h3>Search Your Product</h3>
+                        <img class="points_line" src="./img/mobile/mobile-line.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                    <div class="works__content__points">
+                        <img class="points_img" src="./img/mobile/track.png" alt="">
+                        <h3>Track Price</h3>
+                        <img class="points_line" src="./img/mobile/mobile-line.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                    <div class="works__content__points">
+                        <img class="points_img" src="./img/mobile/notification.png" alt="">
+                        <h3>Get Notifications</h3>
+                        <img class="points_line" src="./img/mobile/mobile-line.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
                 </div>
             </section>
             <section class="whatis" id="buckasur">
                 <div class="whatis__content">
-                    <h2>What is Buckasur?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                    </ul>
-                    <img src="./img/mobile/mobile2.png" alt="">
+                    <div class="siema">
+                        <div class="whatis__content__gallery">
+                            <div class="whatis__content__text">
+                                <h2>What is Buckasur?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                </ul>
+                            </div>
+                            <img class="img__mobile-shown" src="./img/mobile/mobile2.png" alt="">
+                            <img class="img__desktop-shown" src="./img/phone2.png" alt="">
+                        </div>
+                        <div class="whatis__content__gallery">
+                            <div class="whatis__content__text">
+                                <h2>What is Buckasur?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+
+                                </ul>
+                            </div>
+                            <img class="img__mobile-shown" src="./img/mobile/mobile2.png" alt="">
+                            <img class="img__desktop-shown" src="./img/phone2.png" alt="">
+                        </div>
+                        <div class="whatis__content__gallery">
+                            <div class="whatis__content__text">
+                                <h2>What is Buckasur?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                                </ul>
+                            </div>
+                            <img class="img__mobile-shown" src="./img/mobile/mobile2.png" alt="">
+                            <img class="img__desktop-shown" src="./img/phone2.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="newsletter" id="newsletter">
@@ -90,6 +132,21 @@
                         <input type="email" name="email" placeholder="Enter Your Email Address">
                     </form>
                     <button type="button" name="send">Send <img src="./img/mobile/Mail.png" alt=""></button>
+                </div>
+            </section>
+            <section class="showcase mobile-hidden">
+                <div class="showcase__content">
+                    <div class="showcase__content__text">
+                        <h2>Showcase</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="siema2">
+                        <div><img src="../img/slide1.png" alt=""></div>
+                        <div><img src="../img/slide1.png" alt=""></div>
+                        <div><img src="../img/slide1.png" alt=""></div>
+                        <div><img src="../img/slide1.png" alt=""></div>
+                        <div><img src="../img/slide1.png" alt=""></div>
+                    </div>
                 </div>
             </section>
             <section class="download" id="download">
@@ -150,6 +207,13 @@
                 });
 
             }(jQuery));
+        </script>
+        <script src="../js/siema.min.js"></script>
+        <script src="../js/siemaArrow.js"></script>
+        <script>
+            new Siema({
+                loop: true,
+            });
         </script>
     </body>
 

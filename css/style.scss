@@ -44,6 +44,14 @@ p {
     font-size: 4vw;
 }
 
+.img__mobile-shown {
+    display: inline;
+}
+
+.img__desktop-shown {
+    display: none;
+}
+
 .home {
     background-image : url("../img/mobile/bg.png");
     background-repeat: no-repeat;
@@ -53,33 +61,35 @@ p {
     &__content {
         position: relative;
 
-        h1 {
-            padding-top: 20vw;
-        }
+        &__text {
+            h1 {
+                padding-top: 20vw;
+            }
 
-        p {
-            font-size    : 6vw;
-            padding-left : 2em;
-            padding-right: 2em;
-        }
+            p {
+                font-size    : 6vw;
+                padding-left : 2em;
+                padding-right: 2em;
+            }
 
-        button {
-            font-weight     : 700;
-            margin-top      : 7vw;
-            margin-bottom   : 8vw;
-            height          : 70px;
-            width           : 250px;
-            background-color: $color-white;
-            border-radius   : 5px;
-            border          : 0;
-            color           : $color-purple;
+            button {
+                font-weight     : 700;
+                margin-top      : 7vw;
+                margin-bottom   : 8vw;
+                height          : 70px;
+                width           : 250px;
+                background-color: $color-white;
+                border-radius   : 5px;
+                border          : 0;
+                color           : $color-purple;
 
-            img {
-                width         : 10%;
-                vertical-align: middle;
-                right         : 6px;
-                top           : -2px;
-                position      : relative;
+                img {
+                    width         : 10%;
+                    vertical-align: middle;
+                    right         : 6px;
+                    top           : -2px;
+                    position      : relative;
+                }
             }
         }
 
@@ -94,21 +104,25 @@ p {
     &__content {
         padding: 0 20px;
 
-        h2 {
-            margin-top : 0;
-            padding-top: 85px;
+        &__text {
+            h2 {
+                margin-top : 0;
+                padding-top: 85px;
+            }
+
+            p {
+                color: $color-gray;
+            }
         }
 
-        p {
-            color: $color-gray;
-        }
+        &__points {
+            .points_img {
+                width: 14vw;
+            }
 
-        &_img {
-            width: 14vw;
-        }
-
-        &_line {
-            width: 20vw;
+            .points_line {
+                width: 20vw;
+            }
         }
     }
 }
@@ -119,21 +133,23 @@ p {
     &__content {
         padding: 0 20px;
 
-        h2 {
-            margin-top : 0;
-            padding-top: 85px;
-        }
+        &__text {
+            h2 {
+                margin-top : 0;
+                padding-top: 85px;
+            }
 
-        p {
-            color: $color-gray;
-        }
+            p {
+                color: $color-gray;
+            }
 
-        ul {
-            text-align    : left;
-            padding-left  : 20px;
-            padding-bottom: 55px;
-            color         : $color-gray;
-            font-size     : 4vw;
+            ul {
+                text-align    : left;
+                padding-left  : 20px;
+                padding-bottom: 55px;
+                color         : $color-gray;
+                font-size     : 4vw;
+            }
         }
 
         img {
@@ -189,6 +205,10 @@ p {
             }
         }
     }
+}
+
+.showcase {
+    display: none;
 }
 
 .download {

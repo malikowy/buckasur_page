@@ -1,0 +1,261 @@
+$color-gray: #7f7f7f;
+$color-white: #ffffff;
+$color-whiteGray: #f3f3f3;
+$color-purple: #982fec;
+$color-black: rgb(0, 0,0);
+/* MEDIA QUERY NORMAL SCREEN */
+@media (min-width: 64em) {
+    /* CUSTOM DRAWER CLASSES SETTINGS*/
+    .drawer-container {
+        img {
+            right: 1.4em;
+        }
+    }
+
+    .drawer-menu-item--hidden {
+        display: none;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .img__mobile-shown {
+        display: none;
+    }
+
+    .img__desktop-shown {
+        display: inline;
+    }
+
+    .home {
+        background-image: url("../img/desk-bg1.png");
+
+        &__content {
+            max-width   : 1169px;
+            margin-left : auto;
+            margin-right: auto;
+            padding-top : 10vw;
+
+            &__text {
+                float        : left;
+                text-align   : left;
+                padding-right: 5em;
+
+                h1 {
+                    padding-top: 2vw;
+                }
+
+                p {
+                    font-size: 1.5em;
+                    padding  : 0;
+                }
+
+                button {
+                    margin-top   : 4em;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        img {
+            width: 27vw;
+        }
+    }
+
+    .works {
+        &__content {
+            max-width   : 1169px;
+            margin-left : auto;
+            margin-right: auto;
+
+            &__text {
+                width       : 680px;
+                margin-left : auto;
+                margin-right: auto;
+
+                h2 {
+                    margin-top : 0;
+                    padding-top: 100px;
+                }
+
+                p {
+                    color: $color-gray;
+                }
+            }
+
+            &__points {
+                display: inline-block;
+                height : 230px;
+                width  : 240px;
+                padding: 90px 50px;
+
+                .points_img {
+                    width     : 3vw;
+                    max-height: 58px;
+                    width     : auto;
+                }
+
+                .points_line {
+                    width: 6vw;
+                }
+            }
+        }
+    }
+
+    .whatis {
+        background-color: $color-whiteGray;
+
+        &__content {
+            max-width   : 1169px;
+            margin-left : auto;
+            margin-right: auto;
+            padding     : 0 20px;
+
+            &__gallery {
+                max-width   : 1169px;
+                margin-left : auto;
+                margin-right: auto;
+            }
+
+            &__text {
+                float     : right;
+                max-width : 500px;
+                text-align: left;
+
+                h2 {
+                    padding-top: 3em;
+                }
+
+                ul {
+                    font-size: 1em;
+                }
+            }
+
+            img {
+                width         : 16vw;
+                padding-bottom: 4em;
+                padding-top   : 4em;
+            }
+        }
+    }
+
+    .newsletter {
+        background-image: url("../img/desk-bg2.png");
+
+        &__content {
+            max-width   : 1169px;
+            margin-left : auto;
+            margin-right: auto;
+
+            h2 {
+                padding-top  : 100px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    .showcase {
+        display: block;
+
+        &__content {
+            max-width   : 1169px;
+            margin-left : auto;
+            margin-right: auto;
+
+            &__text {
+                max-width   : 505px;
+                margin-left : auto;
+                margin-right: auto;
+                padding     : 0 20px;
+            }
+
+            .siema2 {
+                margin        : 1rem 0;
+                position      : relative;
+                width         : 1000px;
+                margin        : 0 auto;
+                padding-bottom: 6em;
+                padding-top   : 4em;
+            }
+
+            button:nth-of-type(1) {
+                box-shadow      : 0 0 15px 0 #a1a1a1;
+                background-color: transparent;
+                border-radius   : 41px;
+                border          : 2px solid #6c6e6c;
+                display         : inline-block;
+                cursor          : pointer;
+                color           : #ffffff;
+                font-family     : Arial;
+                font-size       : 19px;
+                padding         : 15px 20px;
+                text-decoration : none;
+                text-shadow     : 1px 0 6px #000000;
+                position        : absolute;
+                left            : 10%;
+                top             : 40%;
+            }
+
+            button:nth-of-type(2) {
+                box-shadow      : 0 0 15px 0 #a1a1a1;
+                background-color: transparent;
+                border-radius   : 41px;
+                border          : 2px solid #6c6e6c;
+                display         : inline-block;
+                cursor          : pointer;
+                color           : #ffffff;
+                font-family     : Arial;
+                font-size       : 19px;
+                padding         : 15px 20px;
+                text-decoration : none;
+                text-shadow     : 1px 0 6px #000000;
+                position        : absolute;
+                right           : 10%;
+                top             : 40%;
+            }
+        }
+    }
+
+    .download {
+        background-image: url("../img/desk-bg3.png");
+
+        &__content {
+            max-width   : 1169px;
+            margin-left : auto;
+            margin-right: auto;
+
+            &__text {
+                h2 {
+                    padding-top: 100px;
+                }
+            }
+
+            &__os {
+                padding-bottom: 110px;
+
+                img {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    .contact {
+        p {
+            padding: 50px 40px;
+        }
+    }
+}
