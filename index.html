@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html class="no-js" lang="pl">
-    <!--<![endif]-->
+
 
     <head>
         <meta charset="utf-8">
@@ -18,13 +15,14 @@
         <link href="/css/style.css" rel="stylesheet" />
         <link href="/css/drawer.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
     </head>
 
     <body class="drawer drawer--right drawer--navbarTopGutter">
         <header class="drawer-navbar drawer-navbar--fixed" role="banner">
             <div class="drawer-container">
                 <div class="drawer-navbar-header">
-                    <a class="drawer-brand scrollTo" href="#">Drawer</a>
+                    <a class="drawer-brand scrollTo" href="#home"><img src="/img/mobile/logo.png" alt="Page logo"></a>
                     <button type="button" class="drawer-toggle drawer-hamburger">
                       <span class="sr-only">toggle navigation</span>
                       <span class="drawer-hamburger-icon"></span>
@@ -33,29 +31,92 @@
 
                 <nav class="drawer-nav" role="navigation">
                     <ul class="drawer-menu drawer-menu--right">
-                        <li><a class="drawer-menu-item scrollTo" href="#">How It Works</a></li>
-                        <li><a class="drawer-menu-item scrollTo" href="#">What is Bucksaur</a></li>
-                        <li><a class="drawer-menu-item scrollTo" href="#">Newsletter</a></li>
-                        <li><a class="drawer-menu-item scrollTo" href="#">Download</a></li>
-                        <li><a class="drawer-menu-item scrollTo" href="#">Newsletter</a></li>
+                        <li><a class="drawer-menu-item scrollTo" href="#works">How It Works</a></li>
+                        <li><a class="drawer-menu-item scrollTo" href="#buckasur">What is Buckasur</a></li>
+                        <li><a class="drawer-menu-item scrollTo" href="#newsletter">Newsletter</a></li>
+                        <li><a class="drawer-menu-item scrollTo" href="#download">Download</a></li>
+                        <li><a class="drawer-menu-item scrollTo" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main role="main">
-            <section>
+            <section class="home" id="home">
+                <div class="home__content">
+                    <h1>Get Best Offer On</h1>
+                    <p>Online Shopping When Buckasur is with You!</p>
+                    <button><img src="/img/mobile/download.png" alt="">Free Download</button>
+                    <img src="/img/mobile/mobile1.png" alt="">
+                </div>
             </section>
-            <section>
+            <section class="works" id="works">
+                <div class="works__content">
+                    <h2>How It Works</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <img class="works__content_img" src="/img/mobile/search.png" alt="">
+                    <h3>Search Your Product</h3>
+                    <img class="works__content_line" src="/img/mobile/mobile-line.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <img class="works__content_img" src="/img/mobile/track.png" alt="">
+                    <h3>Track Price</h3>
+                    <img class="works__content_line" src="/img/mobile/mobile-line.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <img class="works__content_img" src="/img/mobile/notification.png" alt="">
+                    <h3>Get Notifications</h3>
+                    <img class="works__content_line" src="/img/mobile/mobile-line.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
             </section>
-            <section>
+            <section class="whatis" id="buckasur">
+                <div class="whatis__content">
+                    <h2>What is Buckasur?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                    </ul>
+                    <img src="/img/mobile/mobile2.png" alt="">
+                </div>
             </section>
-            <section>
+            <section class="newsletter" id="newsletter">
+                <div class="newsletter__content">
+                    <h2>Join Our Newsletter For Exclusive Offers</h2>
+                    <form>
+
+                        <input type="email" name="email" placeholder="Enter Your Email Address">
+                    </form>
+                    <button type="button" name="send">Send <img src="/img/mobile/Mail.png" alt=""></button>
+                </div>
             </section>
-            <section>
+            <section class="download" id="download">
+                <div class="download__content">
+                    <div class="download__content__text">
+                        <h2>Ready To Give It a Try?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="download__content__os">
+                        <img src="/img/mobile/apple.png" alt="">
+                        <button>Apple Store</button>
+                    </div>
+                    <div class="download__content__os">
+                        <img src="/img/mobile/google.png" alt="">
+                        <button>Google Store</button>
+                    </div>
+                    <div class="download__content__os">
+                        <img src="/img/mobile/windows.png" alt="">
+                        <button>Windows Store</button>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <p>2015 - <span class="text__colored">Designed by Mobisoft Infotech</span> | All Rights Reserved</p>
             </section>
         </main>
-        <footer>
-        </footer>
+
 
         <!-- SCRIPT FILES SECTION -->
         <!-- jquery -->
