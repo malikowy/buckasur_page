@@ -5,7 +5,6 @@ $color-purple: #982fec;
 $color-black: rgb(0, 0,0);
 /* MEDIA QUERY NORMAL SCREEN */
 @media (min-width: 64em) {
-    /* CUSTOM DRAWER CLASSES SETTINGS*/
     .drawer-container {
         img {
             right: 1.4em;
@@ -116,8 +115,6 @@ $color-black: rgb(0, 0,0);
     }
 
     .whatis {
-        background-color: $color-whiteGray;
-
         &__content {
             max-width   : 1169px;
             margin-left : auto;

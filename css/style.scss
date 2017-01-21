@@ -3,7 +3,13 @@ $color-white: #ffffff;
 $color-whiteGray: #f3f3f3;
 $color-purple: #982fec;
 $color-black: rgb(0, 0,0);
-
+/* Extending classes*/
+.background-properties {
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+}
+/* Drawer custom class*/
 .drawer-container {
     img {
         vertical-align: middle;
@@ -53,10 +59,9 @@ p {
 }
 
 .home {
-    background-image : url("../img/mobile/bg.png");
-    background-repeat: no-repeat;
-    background-size  : cover;
-    color            : $color-white;
+    @extend .background-properties;
+    background-image: url("../img/mobile/bg.png");
+    color           : $color-white;
 
     &__content {
         position: relative;
@@ -160,10 +165,8 @@ p {
 }
 
 .newsletter {
-    background-image   : url("../img/mobile/bg2.png");
-    background-position: center;
-    background-repeat  : no-repeat;
-    background-size    : cover;
+    @extend .background-properties;
+    background-image: url("../img/mobile/bg2.png");
 
     &__content {
         color  : $color-white;
@@ -212,10 +215,8 @@ p {
 }
 
 .download {
-    background-image   : url("../img/mobile/bg3.png");
-    background-position: center;
-    background-repeat  : no-repeat;
-    background-size    : cover;
+    @extend .background-properties;
+    background-image: url("../img/mobile/bg3.png");
 
     &__content {
         color: $color-white;
